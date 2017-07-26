@@ -13,9 +13,9 @@ namespace StudentCRUD.Controllers
         private unitofwork unitofWork = null;
 
         public HomeController() : this(new unitofwork())
-            {
+        {
                 
-            }
+        }
 
         public HomeController(unitofwork uow)
         {
