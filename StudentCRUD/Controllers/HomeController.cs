@@ -8,8 +8,7 @@ using StudentCRUD.Models;
 namespace StudentCRUD.Controllers
 {
     public class HomeController : Controller
-    {
-        
+    {        
 
         private unitofwork unitofWork = null;
 
