@@ -1,20 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Web.Mvc;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StudentCRUD;
+//using Microsoft.VisualStudio.TestTools.UnitTesting;
 using StudentCRUD.Controllers;
 using StudentCRUD.Models;
-using System.Net.Http;
-using System.Net;
-using Newtonsoft.Json;
+using NUnit.Framework;
 
 
 namespace StudentCRUD.Tests.Controllers
 {
-    [TestClass]
+    [TestFixture]
     public class HomeControllerTest
     {
         StudentsModel student1 = null;
@@ -57,7 +53,7 @@ namespace StudentCRUD.Tests.Controllers
 
 
 
-        [TestMethod]
+        [Test]
         public void Index()
         {
 
@@ -74,7 +70,7 @@ namespace StudentCRUD.Tests.Controllers
 
         }
 
-        [TestMethod]
+        [Test]
         public void Details()
         {
             ViewResult result = controller.Details(1) as ViewResult;
@@ -82,7 +78,7 @@ namespace StudentCRUD.Tests.Controllers
 
         }
 
-        [TestMethod]
+        [Test]
         public void Create()
         {
             
@@ -104,7 +100,7 @@ namespace StudentCRUD.Tests.Controllers
             }
         }
 
-        [TestMethod]
+        [Test]
         public void Edit()
         {
             // Lets create a valid student objct to add into
@@ -126,7 +122,7 @@ namespace StudentCRUD.Tests.Controllers
             }
         }
 
-        [TestMethod]
+        [Test]
         public void Delete()
         {
             int id = 2;
@@ -148,7 +144,7 @@ namespace StudentCRUD.Tests.Controllers
 
 
 
-        [TestMethod]
+        [Test]
         public void About()
         {
             // Arrange
@@ -161,7 +157,7 @@ namespace StudentCRUD.Tests.Controllers
             Assert.AreEqual("Your application description page.", result.ViewBag.Message);
         }
 
-        [TestMethod]
+        [Test]
         public void Contact()
         {
             // Arrange
