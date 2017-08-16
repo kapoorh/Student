@@ -136,7 +136,7 @@ namespace StudentCRUD.Controllers
 
             catch(Exception exp)
             {
-                throw;
+                
             }
                 
         }
