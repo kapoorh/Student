@@ -72,7 +72,7 @@ namespace StudentCRUD.Controllers
             }
             catch
             {
-                throw;
+                
             }
         }
 
@@ -135,7 +135,7 @@ namespace StudentCRUD.Controllers
 
             catch (Exception)
             {
-                throw;
+                
             }
 
         }
