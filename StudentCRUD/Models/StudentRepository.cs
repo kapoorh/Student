@@ -35,7 +35,7 @@ namespace StudentCRUD.Models
             }
             catch (Exception exp)
             {
-
+                throw;
                 //throw new NotImplementedException();
             }
         }
@@ -109,8 +109,5 @@ namespace StudentCRUD.Models
                 throw new NotImplementedException();
             }
         }
-
-
-
     }
 }

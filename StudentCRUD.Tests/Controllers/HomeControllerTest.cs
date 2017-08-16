@@ -96,7 +96,7 @@ namespace StudentCRUD.Tests.Controllers
             }
             catch(Exception)
             {
-
+                throw;
             }
         }
 
