@@ -72,7 +72,7 @@ namespace StudentCRUD.Controllers
             }
             catch(Exception e)
             {
-                throw e;                
+                string s = e.ToString();    
             }
         }
 
