@@ -70,9 +70,9 @@ namespace StudentCRUD.Controllers
                 unitofWork.studentrepository.InsertStudentsModel(studentmodel);
                 
             }
-            catch
+            catch(Exception e)
             {
-                
+                throw e;                
             }
         }
 
