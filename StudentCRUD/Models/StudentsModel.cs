@@ -17,7 +17,6 @@ namespace StudentCRUD.Models
             this.Dob = DateTime.Now;
             this.Gender = null;
 
-
             this.Address = null;
             this.City = null;
             this.State = null;
