@@ -74,7 +74,7 @@ namespace StudentCRUD.Tests.Controllers
         public void Details()
         {
             ViewResult result = controller.Details(1) as ViewResult;
-            Assert.AreEqual(result.Model, student2);
+            Assert.AreEqual(result.Model, student1);
 
         }
 
@@ -108,7 +108,7 @@ namespace StudentCRUD.Tests.Controllers
             StudentsModel editstudent = new StudentsModel { ID = 4, First_Name = "yasmin", Last_Name = "Sheikh", Email = "Yasmin@hotmail.com", Dob = Convert.ToDateTime("12/12/1978"), Gender = "Female", Address = "MG Road", City = "Mahad", State = "MHS", Pin = "1231" };
 
             // Lets call the action method now
-            controller.Edit(3, editstudent);
+            controller.Edit(4, editstudent);
 
             // get the list of students
             List<StudentsModel> students = studentRepository.GetStudents();
