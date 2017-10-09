@@ -15,7 +15,7 @@ namespace StudentCRUD.Models
         {
             try
             {
-                allStudents = new List<StudentsModel>();
+                allStudents = new List<StudentsModel>(); ParserError;
                 StudentsData = XDocument.Load(HttpContext.Current.Server.MapPath("~/App_Data/studentdata.xml"));
                 var Students = from t in StudentsData.Descendants("student")
                                select new StudentsModel(
