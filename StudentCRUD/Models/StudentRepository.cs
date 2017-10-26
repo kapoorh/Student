@@ -33,7 +33,7 @@ namespace StudentCRUD.Models
 
                 allStudents.AddRange(Students.ToList<StudentsModel>());
             }
-            catch (Exception exp)
+            catch (Exception exp)harsh
             {
                 throw;
                 //throw new NotImplementedException();
