@@ -10,10 +10,8 @@ namespace StudentCRUD.Controllers
     public class StudentController : Controller
     {
         private unitofwork unitofWork = null;
-
         public StudentController() : this(new unitofwork())
         {
-
         }
 
         public StudentController(unitofwork uow)
