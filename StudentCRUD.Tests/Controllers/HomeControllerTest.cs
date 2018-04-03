@@ -74,7 +74,7 @@ namespace StudentCRUD.Tests.Controllers
         public void Details()
         {
             ViewResult result = controller.Details(1) as ViewResult;
-            Assert.AreEqual(result.Model, student1);
+            Assert.AreEqual(result.Model, student2);
 
         }
 
